@@ -1,4 +1,8 @@
+(import '[javax.script ScriptEngineManager])
+
+(def nashorn (.getEngineByName (ScriptEngineManager.) "nashorn"))
+
 (deftask postcss
   "Task to create postcss"
   []
-  (println "Up an running!"))
+  (println (.eval nashorn "5 + 5")))
