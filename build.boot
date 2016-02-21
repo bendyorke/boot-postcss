@@ -21,9 +21,3 @@
        :url         "https://github.com/bendyorke/boot-postcss"
        :scm {:url   "https://github.com/bendyorke/boot-postcss"
              :name  "git"}})
-
-(deftask build []
-  (comp (pom) (jar) (install)))
-
-(deftask deploy []
-  (comp (build) (push :repo "clojars")))
