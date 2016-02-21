@@ -1,0 +1,13 @@
+@value corge from "css/qux.css";
+
+.bar {
+  composes: baz from "css/qux.css";
+  background: corge;
+
+}
+@media corge {
+  .quux {
+    composes: bar;
+    color: corge;
+  }
+}

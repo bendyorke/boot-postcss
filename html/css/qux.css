@@ -1,0 +1,6 @@
+@value corge grault;
+
+.baz {
+  flex: 1;
+  color: corge;
+}

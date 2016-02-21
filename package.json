@@ -1,0 +1,26 @@
+{
+  "name": "boot-css-modules",
+  "version": "1.0.0",
+  "description": "boot task to run postcss",
+  "main": "index.js",
+  "dependencies": {
+    "autoprefixer": "^6.3.3",
+    "cssnano": "^3.5.2",
+    "es6-promise": "^3.1.2",
+    "postcss": "^5.0.16",
+    "postcss-modules-extract-imports": "^1.0.0",
+    "postcss-modules-local-by-default": "^1.0.1",
+    "postcss-modules-scope": "^1.0.0",
+    "postcss-modules-values": "^1.1.1",
+    "postcss-nested": "^1.0.0"
+  },
+  "devDependencies": {
+    "browserify": "^13.0.0"
+  },
+  "scripts": {
+    "build": "browserify js/postcss/index.js -o js/postcss/bundle.js",
+    "build:polyfills": "browserify js/nashorn/polyfills.js -o js/nashorn/bundle.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
